@@ -15,7 +15,7 @@ with l:
     n1= st.number_input(
      "行程開始前幾分鐘提醒？",
      min_value=0, max_value=60,
-     value=15
+     value=30
     )
     if st.button("新增行程"):
         st.session_state.mylist.append(f"行程主旨:{t1},日期選擇:{t3},時間選擇:{t4},幾分鐘前提醒:{n1}")
